@@ -1,0 +1,17 @@
+ethereum:
+  node_url: "https://mainnet.infura.io/v3/<API-key>"
+  websocket_url: "wss://mainnet.infura.io/ws/v3/<API-key>"
+  start_block: 0 # 0 means latest block
+  max_block_range: 100
+  confirmation_blocks: 0
+
+kafka:
+  brokers:
+    - "localhost:29092"
+  topic: "blockchain-transactions"
+  batch_size: 100
+  batch_timeout: 1000 # milliseconds
+
+log:
+  level: "debug" # debug, info, warn, error
+  format: "console" # json or console
